@@ -1,0 +1,50 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="noteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="300" height="300" fill="url(#bgGradient)" rx="15" ry="15"/>
+  
+  <!-- 音符装饰 -->
+  <g fill="url(#noteGradient)" opacity="0.3">
+    <!-- 小音符1 -->
+    <circle cx="80" cy="80" r="3"/>
+    <rect x="83" y="65" width="2" height="18"/>
+    <path d="M 85 65 Q 90 62 90 67 Q 90 72 85 69 Z"/>
+    
+    <!-- 小音符2 -->
+    <circle cx="220" cy="220" r="3"/>
+    <rect x="223" y="205" width="2" height="18"/>
+    <path d="M 225 205 Q 230 202 230 207 Q 230 212 225 209 Z"/>
+  </g>
+  
+  <!-- 主音符图标 -->
+  <g transform="translate(150,150)" fill="url(#noteGradient)">
+    <!-- 音符头部 -->
+    <ellipse cx="-15" cy="20" rx="12" ry="8" transform="rotate(-20)"/>
+    
+    <!-- 音符杆 -->
+    <rect x="-8" y="-25" width="3" height="45"/>
+    
+    <!-- 音符旗帜 -->
+    <path d="M -5 -25 Q 15 -30 20 -15 Q 15 -5 -5 -10 Z"/>
+    <path d="M -5 -15 Q 15 -20 20 -5 Q 15 5 -5 0 Z"/>
+  </g>
+  
+  <!-- 装饰圆环 -->
+  <circle cx="150" cy="150" r="80" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- 底部文字 -->
+  <text x="150" y="250" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="14" font-weight="300">
+    Music
+  </text>
+</svg>
